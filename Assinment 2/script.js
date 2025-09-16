@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
     $('.filter-controls button').on('click', function() {
-
         let filterValue = $(this).attr('data-filter');
 
         if (filterValue === 'all') {
@@ -13,10 +12,8 @@ $(document).ready(function() {
             $('.cs-card-group .cs-item').filter('.' + filterValue).show(400);
         }
 
-
         $('.filter-controls button').removeClass('active');
         $(this).addClass('active');
     });
-
 
 });
